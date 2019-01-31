@@ -1,0 +1,41 @@
+/**
+ * Measurement
+ */
+$base-unit: 16;
+
+/**
+ * Color
+ */
+
+/* Named color */
+$kpmg-blue: #00338D;
+
+/* App color */
+$primary-color: $kpmg-blue;
+
+/**
+ * Font
+ */
+
+/* Named font stack */
+$arial-font-stack: Arial, Helvetica Neue, Helvetica, sans-serif;
+$segoe-ui-font-stack: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+$kpmg-font-stack: "KPMG", Arial Narrow, Arial, sans-serif;
+
+/* App color */
+$font-display: $kpmg-font-stack;
+$font-heading: $kpmg-font-stack;
+$font-body1: $segoe-ui-font-stack;
+$font-body2: $arial-font-stack;
+
+/**
+ * Easing
+ */
+$easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+$easeOutSine: cubic-bezier(0.39, 0.575, 0.565, 1);
+$easeInSine: cubic-bezier(0.47, 0, 0.745, 0.715);
+
+/**
+ * Container
+ */
+$containers: (regularSmall: 720px, regular: 800px, wide: 1360px);
