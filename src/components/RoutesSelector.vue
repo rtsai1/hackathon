@@ -5,8 +5,8 @@
         <md-card>
             <md-card-header>
                 <md-card-header-text>
-                  <div class="md-title">Leaders by States</div>
-                  <div class="md-subhead">Leader states: WA</div>
+                  <div class="md-title">Leaders by State</div>
+                  <div class="md-subhead">Leader: WA</div>
                 </md-card-header-text>
                 <md-card-media md-medium>
                     <img class="route-image" :src="ausMapImage" alt="Aus Map">
@@ -22,8 +22,8 @@
         <md-card>
             <md-card-header>
                 <md-card-header-text>
-                  <div class="md-title">Leaders by Divisions</div>
-                  <div class="md-subhead">Leader divisions: INDS Division</div>
+                  <div class="md-title">Leaders by Division</div>
+                  <div class="md-subhead">Leader: IDD</div>
                 </md-card-header-text>
                 <md-card-media md-medium>
                     <img class="route-image" :src="divisionIcon" alt="Aus Map">

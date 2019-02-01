@@ -9,6 +9,12 @@
             ></path>
             </svg>
         </figure>
+
+        <p class="main-header__content">
+            KPMG Impact Cup<br/>
+            KICking goals by giving back!
+
+        </p>
     </header>
 </template>
 
@@ -26,6 +32,7 @@ export default {
     @import "~@styles/common/mixins";
 
     .main-header {
+        position: relative;
         background: $kpmg-blue;
         height: 100vh;
 
@@ -34,7 +41,12 @@ export default {
             display: block;
             width: em(100);
             height: auto;
-            margin: 0 auto 1em auto;
+            margin: 0 0 2em 0;
+        }
+
+        &__content {
+            color: white;
+            opacity: .97;
         }
     }
 </style>
