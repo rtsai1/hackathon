@@ -22,17 +22,27 @@ export default {
 </script>
 <style lang="scss">
   .app {
-    display: flex;
+    width: 100vw;
+    height: 100vh;
 
     &__header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 280px;
+      height: 100%;
       padding: 2em;
-      flex: 0 1 280px;
     }
 
     &__main {
-      flex: 1;
-      padding: 1.5em 2em 2em 2em;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: calc(100vw - 280px);
+      height: 100%;
+      padding: 1.5em 3em 3em 3em;
       background: #fbfbfb;
+      overflow: auto;
     }
 
     &__heading {

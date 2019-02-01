@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import States from './views/States.vue'
 import Divisions from './views/Divisions.vue'
+import LeaderBoardViewer from './views/LeaderBoardViewer.vue'
 
 Vue.use(Router)
 
@@ -19,7 +20,7 @@ export default new Router({
       }
     },
     {
-      path: '/',
+      path: '/states',
       name: 'states',
       component: States,
       meta: { 
@@ -27,12 +28,20 @@ export default new Router({
       }
     },
     {
-      path: '/',
+      path: '/divisions',
       name: 'divisions',
       component: Divisions,
       meta: { 
         heading: "By Divisions" 
       }
-    }
+    },
+    {
+      path: '/leaderboard/:type',
+      name: 'leaderBoardViewer',
+      component: LeaderBoardViewer,
+      meta: { 
+        heading: "By States" 
+      }
+    },
   ]
 })
