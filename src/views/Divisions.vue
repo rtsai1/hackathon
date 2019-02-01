@@ -7,7 +7,7 @@
                     <md-card class="md-primary">
                       <md-card-header>
                         <md-card-header-text>
-                          <div class="md-title">{{ item.title }}</div>
+                          <div class="md-title division-title">{{ item.title }}</div>
                         </md-card-header-text>
 
                         <md-card-media>
@@ -20,7 +20,7 @@
             </div>
 
             <div class="leaderboard">
-                leaderboard
+                <img :src="leaderBoardStates" alt="">
             </div>
         </div>
         
@@ -28,12 +28,12 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
+import leaderBoardStates from '@/assets/images/leaderBoard-states.png';
 
 export default {
     data: function() {
         return {
+            leaderBoardStates,
             divisions: [
                 {
                     id: "innovation-and-digital-data",
@@ -79,17 +79,19 @@ export default {
 }
 </script>
 <style lang="scss">
+    .division-title {
+        font-size: 1.2em!important;
+    }
     .divisions-view {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 2em;
-        grid-row-gap: 1em;
     }
     .divisions {
         display: grid;
         grid-template-columns: 48% 48%;
         grid-column-gap: 4%;
-        grid-row-gap: 1em;
+        grid-row-gap: 0;
     }
     .divisions-item {
         cursor: pointer;

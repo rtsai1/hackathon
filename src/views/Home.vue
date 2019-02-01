@@ -62,7 +62,7 @@ export default {
     mounted: function() {
         let gallerySiema = new Siema({
             loop: true,
-            duration: 400
+            duration: 600
         });
         this.siemaInterval = window.setInterval(() => gallerySiema.next(), 5000);
     },
