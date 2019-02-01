@@ -5,8 +5,8 @@
         <md-card>
             <md-card-header>
                 <md-card-header-text>
-                  <div class="md-title">By States</div>
-                  <div class="md-subhead">By Statese</div>
+                  <div class="md-title">Leaders by States</div>
+                  <div class="md-subhead">Leader states: WA</div>
                 </md-card-header-text>
                 <md-card-media md-medium>
                     <img class="route-image" :src="ausMapImage" alt="Aus Map">
@@ -14,7 +14,7 @@
             </md-card-header>
 
             <md-card-actions>
-                <md-button class="" @click="$router.push('states')">Select</md-button>
+                <md-button class="" @click="$router.push('states')">Browse</md-button>
             </md-card-actions>
         </md-card>
 
@@ -22,16 +22,16 @@
         <md-card>
             <md-card-header>
                 <md-card-header-text>
-                  <div class="md-title">By Divisions</div>
-                  <div class="md-subhead">By Divisions</div>
+                  <div class="md-title">Leaders by Divisions</div>
+                  <div class="md-subhead">Leader divisions: INDS Division</div>
                 </md-card-header-text>
                 <md-card-media md-medium>
-                    <img class="route-image" :src="ausMapImage" alt="Aus Map">
+                    <img class="route-image" :src="divisionIcon" alt="Aus Map">
                 </md-card-media>
             </md-card-header>
 
             <md-card-actions>
-                <md-button class="" @click="$router.push('divisions')">Select</md-button>
+                <md-button class="" @click="$router.push('divisions')">Browse</md-button>
             </md-card-actions>
         </md-card>
     </div>
@@ -39,12 +39,14 @@
 
 <script>
 import ausMapImage from "@/assets/images/aus-map.png"
+import divisionIcon from "@/assets/images/divisionIcon.png"
 
 export default {
     name: 'routesSelector',
     data: function () {
         return {
-            ausMapImage
+            ausMapImage,
+            divisionIcon
         }
     }
 }
@@ -54,6 +56,16 @@ export default {
     @import "~@styles/common/functions";
     @import "~@styles/common/mixins";
 
+    .md-title {
+        color: $kpmg-blue;
+    }
+
+    .md-subhead {
+        color: black;
+        opacity: 1;
+        margin-top: 1em;
+    }
+
     .routes-selector {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -61,5 +73,6 @@ export default {
     }
 
     .route-image {
+        height: auto;
     }
 </style>
