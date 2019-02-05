@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import leaderBoardStates from '@/assets/images/leaderBoard-states.png';
+import leaderBoardStates from '@/assets/images/leaderBoard-division.png';
 
 export default {
     data: function() {
