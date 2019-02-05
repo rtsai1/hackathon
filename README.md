@@ -1,4 +1,4 @@
-# hello
+# KIC
 
 ## Project setup
 ```
